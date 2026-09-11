@@ -38,7 +38,9 @@ let currentPiece = null;
 let currentX = 0;
 let currentY = 0;
 let highScore = 0;
-let gameOver = false;
+// Load high score from localStorage
+highScore = parseInt(localStorage.getItem("stackOverflownHighScore")) || 0;
+document.getElementById("high-score").textContent = highScore;
 let level = 1;
 let patternsCleared = 0;
 let dropCounter = 0;
