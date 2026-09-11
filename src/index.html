@@ -58,5 +58,7 @@
 
     <script src="patterns.js"></script>
     <script src="index.js"></script>
-  </body>
+  // Load high score from localStorage
+highScore = parseInt(localStorage.getItem("stackOverflownHighScore")) || 0;
+document.getElementById("high-score").textContent = highScore;
 </html>
